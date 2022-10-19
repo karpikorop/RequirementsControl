@@ -16,25 +16,25 @@
                 <th style="font-weight: 400">1. Множина джерел появи технічних ризиків<span id="techText" style="margin-left: 1em">38.89% Кількість - 7</span></th>
             </tr>
             <tr>
-                <td>Функціональні характеристики ПЗ<input type="checkbox" class="tech1" onchange="techChange()" checked /></td>
+                <td>Функціональні характеристики ПЗ<input type="checkbox" class="tech" onchange="tableChange('tech')" checked /></td>
             </tr>
             <tr>
-                <td>Характеристики якості ПЗ<input type="checkbox" class="tech1" onchange="techChange()" checked /></td>
+                <td>Характеристики якості ПЗ<input type="checkbox" class="tech" onchange="tableChange('tech')" checked /></td>
             </tr>
             <tr>
-                <td>Характеристики надійності ПЗ<input type="checkbox" class="tech1" onchange="techChange()" checked /></td>
+                <td>Характеристики надійності ПЗ<input type="checkbox" class="tech" onchange="tableChange('tech')" checked /></td>
             </tr>
             <tr>
-                <td>Застосовність ПЗ<input type="checkbox" class="tech1" onchange="techChange()" checked /></td>
+                <td>Застосовність ПЗ<input type="checkbox" class="tech" onchange="tableChange('tech')" checked /></td>
             </tr>
             <tr>
-                <td>Часова продукція ПЗ<input type="checkbox" class="tech1" onchange="techChange()" checked /></td>
+                <td>Часова продукція ПЗ<input type="checkbox" class="tech" onchange="tableChange('tech')" checked /></td>
             </tr>
             <tr>
-                <td>Супроводжуваність ПЗ<input type="checkbox" class="tech1" onchange="techChange()" checked /></td>
+                <td>Супроводжуваність ПЗ<input type="checkbox" class="tech" onchange="tableChange('tech')" checked /></td>
             </tr>
             <tr>
-                <td>Повторне використання компонент ПЗ<input type="checkbox" class="tech1" onchange="techChange()" checked /></td>
+                <td>Повторне використання компонент ПЗ<input type="checkbox" class="tech" onchange="tableChange('tech')" checked /></td>
             </tr>
         </table>
 
@@ -43,13 +43,13 @@
                 <th style="font-weight: 400">2. Множина джерел появи вартісних ризиків<span id="costText" style="margin-left: 1em">16.67% Кількість - 3</span></th>
             </tr>
             <tr>
-                <td>Обмеження сумарного бюджету на програмний проект<input type="checkbox" class="cost2" onchange="costChange()" checked /></td>
+                <td>Обмеження сумарного бюджету на програмний проект<input type="checkbox" class="cost" onchange="tableChange('cost')" checked /></td>
             </tr>
             <tr>
-                <td>Недоступна вартість реалізації програмного проекту<input type="checkbox" class="cost2" onchange="costChange()" checked /></td>
+                <td>Недоступна вартість реалізації програмного проекту<input type="checkbox" class="cost" onchange="tableChange('cost')" checked /></td>
             </tr>
             <tr>
-                <td>Низька ступінь реалізму при оцінюванні витрат на програмний проект<input type="checkbox" class="cost2" onchange="costChange()" checked /></td>
+                <td>Низька ступінь реалізму при оцінюванні витрат на програмний проект<input type="checkbox" class="cost" onchange="tableChange('cost')" checked /></td>
             </tr>
         </table>
 
@@ -58,13 +58,13 @@
                 <th style="font-weight: 400">3. Множина джерел появи планових ризиків<span id="planText" style="margin-left: 1em">16.67% Кількість - 3</span></th>
             </tr>
             <tr>
-                <td>Властивості та можливості гнучкості внесення змін до планів життєвого циклу розроблення ПЗ<input type="checkbox" class="plan3" onchange="planChange()" checked /></td>
+                <td>Властивості та можливості гнучкості внесення змін до планів життєвого циклу розроблення ПЗ<input type="checkbox" class="plan" onchange="tableChange('plan')" checked /></td>
             </tr>
             <tr>
-                <td>Можливості порушення встановлених термінів реалізації етапів життєвого циклу розроблення ПЗ<input type="checkbox" class="plan3" onchange="planChange()" checked /></td>
+                <td>Можливості порушення встановлених термінів реалізації етапів життєвого циклу розроблення ПЗ<input type="checkbox" class="plan" onchange="tableChange('plan')" checked /></td>
             </tr>
             <tr>
-                <td>Низька ступінь реалізму при встановленні планів і етапів життєвого циклу розроблення ПЗ<input type="checkbox" class="plan3" onchange="planChange()" checked /></td>
+                <td>Низька ступінь реалізму при встановленні планів і етапів життєвого циклу розроблення ПЗ<input type="checkbox" class="plan" onchange="tableChange('plan')" checked /></td>
             </tr>
         </table>
 
@@ -75,21 +75,206 @@
                 </th>
             </tr>
             <tr>
-                <td>Хибна стратегія реалізації програмного проекту<input type="checkbox" class="real4" onchange="realChange()" checked /></td>
+                <td>Хибна стратегія реалізації програмного проекту<input type="checkbox" class="real" onchange="tableChange('real')" checked /></td>
             </tr>
             <tr>
-                <td>Неефективне планування проекту розроблення ПЗ<input type="checkbox" class="real4" onchange="realChange()" checked /></td>
+                <td>Неефективне планування проекту розроблення ПЗ<input type="checkbox" class="real" onchange="tableChange('real')" checked /></td>
             </tr>
             <tr>
-                <td>Неякісне оцінювання програмного проекту<input type="checkbox" class="real4" onchange="realChange()" checked /></td>
+                <td>Неякісне оцінювання програмного проекту<input type="checkbox" class="real" onchange="tableChange('real')" checked /></td>
             </tr>
             <tr>
-                <td>Прогалини в документуванні етапів реалізації програмного проекту<input type="checkbox" class="real4" onchange="realChange()" checked /></td>
+                <td>Прогалини в документуванні етапів реалізації програмного проекту<input type="checkbox" class="real" onchange="tableChange('real')" checked /></td>
             </tr>
             <tr>
-                <td>промахи в прогнозуванні результатів реалізації програмного проекту<input type="checkbox" class="real4" onchange="realChange()" checked /></td>
+                <td>промахи в прогнозуванні результатів реалізації програмного проекту<input type="checkbox" class="real" onchange="tableChange('real')" checked /></td>
             </tr>
         </table>
+
         <h2 style="font-weight: 400; text-align: right" id="result1">100.00% Кількість - 18</h2>
+
+        <br />
+
+        <h2 style="font-weight: 100; text-align: center">1.1. Визначення можливих джерел появи ризиків</h2>
+
+        <table>
+            <tr>
+                <th style="font-weight: 400">1. Множина настання технічних ризикових подій<span id="tech2Text" style="margin-left: 1em">26.83% Кількість - 11</span></th>
+            </tr>
+            <tr>
+                <td>Затримки у постачанні обладнання, необхідного для підтримки процесу розроблення ПЗ<input type="checkbox" class="tech2" onchange="tableChange('tech2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Затримки у постачанні інструментальних засобів, необхідних для підтримки процесу розроблення ПЗ<input type="checkbox" class="tech2" onchange="tableChange('tech2')" checked /></td>
+            </tr>
+            <tr>
+                <td>
+                    Небажання команди виконавців використовувати інструментальні засоби для підтримки процесу розроблення ПЗ<input
+                        type="checkbox"
+                        class="tech2"
+                        onchange="tableChange('tech2')"
+                        checked />
+                </td>
+            </tr>
+            <tr>
+                <td>Формування запитів на більш потужні інструментальні засоби розроблення ПЗ<input type="checkbox" class="tech2" onchange="tableChange('tech2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Відмова команди виконавців від CASE-засобів розроблення ПЗ<input type="checkbox" class="tech2" onchange="tableChange('tech2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Неефективність програмного коду, згенерованого CASE-засобами розроблення ПЗ<input type="checkbox" class="tech2" onchange="tableChange('tech2')" checked /></td>
+            </tr>
+            <tr>
+                <td>
+                    Неможливість інтеграції CASE-засобів з іншими інструментальними засобами для підтримки процесу розроблення ПЗ<input
+                        type="checkbox"
+                        class="tech2"
+                        onchange="tableChange('tech2')"
+                        checked />
+                </td>
+            </tr>
+            <tr>
+                <td>Недостатня продуктивність баз(и) даних для підтримки процесу розроблення ПЗ<input type="checkbox" class="tech2" onchange="tableChange('tech2')" checked /></td>
+            </tr>
+            <tr>
+                <td>
+                    Програмні компоненти, які використовують повторно в ПЗ, мають дефекти та обмежені функціональні можливості<input
+                        type="checkbox"
+                        class="tech2"
+                        onchange="tableChange('tech2')"
+                        checked />
+                </td>
+            </tr>
+            <tr>
+                <td>Швидкість виявлення дефектів у програмному коді є нижчою від раніше запланованих термінів<input type="checkbox" class="tech2" onchange="tableChange('tech2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Поява дефектних системних компонент, які використовують для розроблення ПЗ<input type="checkbox" class="tech2" onchange="tableChange('tech2')" checked /></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th style="font-weight: 400">2. Множина настання вартісних ризикових подій<span id="cost2Text" style="margin-left: 1em">17.07% Кількість - 7</span></th>
+            </tr>
+            <tr>
+                <td>Недо(пере)оцінювання витрат на реалізацію програмного проекту (надмірно низька вартість)<input type="checkbox" class="cost2" onchange="tableChange('cost2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Фінансові ускладнення у компанії-замовника ПЗ<input type="checkbox" class="cost2" onchange="tableChange('cost2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Фінансові ускладнення у компанії-розробника ПЗ<input type="checkbox" class="cost2" onchange="tableChange('cost2')" checked /></td>
+            </tr>
+            <tr>
+                <td>
+                    Змен(збіль)шення бюджету програмного проекта з ініціативи компанії-замовника ПЗ під час його реалізації<input
+                        type="checkbox"
+                        class="cost2"
+                        onchange="tableChange('cost2')"
+                        checked />
+                </td>
+            </tr>
+            <tr>
+                <td>Висока вартість виконання повторних робіт, необхідних для зміни вимог до ПЗ<input type="checkbox" class="cost2" onchange="tableChange('cost2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Реорганізація структурних підрозділів у компанії-замовника ПЗ<input type="checkbox" class="cost2" onchange="tableChange('cost2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Реорганізація команди виконавців у компанії-розробника ПЗ<input type="checkbox" class="cost2" onchange="tableChange('cost2')" checked /></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th style="font-weight: 400">3. Множина настання планових ризикових подій<span id="plan2Text" style="margin-left: 1em">21.95% Кількість - 9</span></th>
+            </tr>
+            <tr>
+                <td>Зміни графіка виконання робіт з боку замовника чи розробника ПЗ<input type="checkbox" class="plan2" onchange="tableChange('plan2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Порушення графіка виконання робіт з боку компанії-розробника ПЗ<input type="checkbox" class="plan2" onchange="tableChange('plan2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Потреба зміни користувацьких вимог до ПЗ з боку компанії-замовника ПЗ<input type="checkbox" class="plan2" onchange="tableChange('plan2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Потреба зміни функціональних вимог до ПЗ з боку компанії-розробника ПЗ<input type="checkbox" class="plan2" onchange="tableChange('plan2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Потреба виконання великої кількості повторних робіт, необхідних для зміни вимог до ПЗ<input type="checkbox" class="plan2" onchange="tableChange('plan2')" checked /></td>
+            </tr>
+            <tr>
+                <td>
+                    Недо(пере)оцінювання тривалості етапів реалізації програмного проекту з боку компанії-замовника ПЗ<input type="checkbox" class="plan2" onchange="tableChange('plan2')" checked />
+                </td>
+            </tr>
+            <tr>
+                <td>Остаточний розмір ПЗ значно перевищує (менший від) заплановані(их) його характеристики<input type="checkbox" class="plan2" onchange="tableChange('plan2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Поява на ринку аналогічного ПЗ до виходу замовленого<input type="checkbox" class="plan2" onchange="tableChange('plan2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Поява на ринку більш конкурентоздатного ПЗ<input type="checkbox" class="plan2" onchange="tableChange('plan2')" checked /></td>
+            </tr>
+        </table>
+
+        <table style="margin-bottom: 20px">
+            <tr>
+                <th style="font-weight: 400">
+                    4. Множина настання ризикових подій реалізації процесу управління програмним проектом<span id="real2Text" style="margin-left: 1em">34.15% Кількість - 14</span>
+                </th>
+            </tr>
+            <tr>
+                <td>Низький моральний стан персоналу команди виконавців ПЗ<input type="checkbox" class="real2" onchange="tableChange('real2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Низька взаємодія між членами команди виконавців ПЗ<input type="checkbox" class="real2" onchange="tableChange('real2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Пасивність керівника (менеджера) програмного проекту<input type="checkbox" class="real2" onchange="tableChange('real2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Недостатня компетентність керівника (менеджера) програмного проекту<input type="checkbox" class="real2" onchange="tableChange('real2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Незадоволеність замовника результатами етапів реалізації програмного проекту<input type="checkbox" class="real2" onchange="tableChange('real2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Недостатня кількість фахівців у команді виконавців ПЗ з необхідним професійним рівнем<input type="checkbox" class="real2" onchange="tableChange('real2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Хвороба провідного виконавця в найкритичніший момент розроблення ПЗ<input type="checkbox" class="real2" onchange="tableChange('real2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Одночасна хвороба декількох виконавців підчас розроблення ПЗ<input type="checkbox" class="real2" onchange="tableChange('real2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Неможливість організації необхідного навчання персоналу команди виконавців ПЗ<input type="checkbox" class="real2" onchange="tableChange('real2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Зміна пріоритетів у процесі управління програмним проектом <input type="checkbox" class="real2" onchange="tableChange('real2')" checked /></td>
+            </tr>
+            <tr>
+                <td>
+                    Недо(пере)оцінювання необхідної кількості розробників (підрядників і субпідрядників) на етапах життєвого циклу розроблення ПЗ
+                    <input type="checkbox" class="real2" onchange="tableChange('real2')" checked />
+                </td>
+            </tr>
+            <tr>
+                <td>Недостатнє (надмірне) документування результатів на етапах реалізації програмного проекту<input type="checkbox" class="real2" onchange="tableChange('real2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Нереалістичне прогнозування результатів на етапах реалізації програмного проекту<input type="checkbox" class="real2" onchange="tableChange('real2')" checked /></td>
+            </tr>
+            <tr>
+                <td>Недостатній професійний рівень представників від компанії-замовника ПЗ<input type="checkbox" class="real2" onchange="tableChange('real2')" checked /></td>
+            </tr>
+        </table>
+
+        <h2 style="font-weight: 400; text-align: right" id="result2">100.00% Кількість - 41</h2>
     </body>
 </html>
