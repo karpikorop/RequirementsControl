@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="js/script.js"></script>
+        <title>RequirementsControl</title>
+    </head>
+    <body>
+        <h1 style="font-weight: 200; text-align: center">Етап 1. Ідентифікація ризиків розроблення ПЗ</h1>
+        <h2 style="font-weight: 100; text-align: center">1.1. Визначення можливих джерел появи ризиків</h2>
+        <table>
+            <tr>
+                <th style="font-weight: 400">1. Множина джерел появи технічних ризиків<span id="techText" style="margin-left: 1em">38.89% Кількість - 7</span></th>
+            </tr>
+            <tr>
+                <td>Функціональні характеристики ПЗ<input type="checkbox" class="tech1" onchange="techChange()" checked /></td>
+            </tr>
+            <tr>
+                <td>Характеристики якості ПЗ<input type="checkbox" class="tech1" onchange="techChange()" checked /></td>
+            </tr>
+            <tr>
+                <td>Характеристики надійності ПЗ<input type="checkbox" class="tech1" onchange="techChange()" checked /></td>
+            </tr>
+            <tr>
+                <td>Застосовність ПЗ<input type="checkbox" class="tech1" onchange="techChange()" checked /></td>
+            </tr>
+            <tr>
+                <td>Часова продукція ПЗ<input type="checkbox" class="tech1" onchange="techChange()" checked /></td>
+            </tr>
+            <tr>
+                <td>Супроводжуваність ПЗ<input type="checkbox" class="tech1" onchange="techChange()" checked /></td>
+            </tr>
+            <tr>
+                <td>Повторне використання компонент ПЗ<input type="checkbox" class="tech1" onchange="techChange()" checked /></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th style="font-weight: 400">2. Множина джерел появи вартісних ризиків<span id="costText" style="margin-left: 1em">16.67% Кількість - 3</span></th>
+            </tr>
+            <tr>
+                <td>Обмеження сумарного бюджету на програмний проект<input type="checkbox" class="cost2" onchange="costChange()" checked /></td>
+            </tr>
+            <tr>
+                <td>Недоступна вартість реалізації програмного проекту<input type="checkbox" class="cost2" onchange="costChange()" checked /></td>
+            </tr>
+            <tr>
+                <td>Низька ступінь реалізму при оцінюванні витрат на програмний проект<input type="checkbox" class="cost2" onchange="costChange()" checked /></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th style="font-weight: 400">3. Множина джерел появи планових ризиків<span id="planText" style="margin-left: 1em">16.67% Кількість - 3</span></th>
+            </tr>
+            <tr>
+                <td>Властивості та можливості гнучкості внесення змін до планів життєвого циклу розроблення ПЗ<input type="checkbox" class="plan3" onchange="planChange()" checked /></td>
+            </tr>
+            <tr>
+                <td>Можливості порушення встановлених термінів реалізації етапів життєвого циклу розроблення ПЗ<input type="checkbox" class="plan3" onchange="planChange()" checked /></td>
+            </tr>
+            <tr>
+                <td>Низька ступінь реалізму при встановленні планів і етапів життєвого циклу розроблення ПЗ<input type="checkbox" class="plan3" onchange="planChange()" checked /></td>
+            </tr>
+        </table>
+
+        <table style="margin-bottom: 20px">
+            <tr>
+                <th style="font-weight: 400">
+                    4. Множина джерел появи ризиків реалізації процесу управління програмним проектом<span id="realText" style="margin-left: 1em">27.78% Кількість - 5</span>
+                </th>
+            </tr>
+            <tr>
+                <td>Хибна стратегія реалізації програмного проекту<input type="checkbox" class="real4" onchange="realChange()" checked /></td>
+            </tr>
+            <tr>
+                <td>Неефективне планування проекту розроблення ПЗ<input type="checkbox" class="real4" onchange="realChange()" checked /></td>
+            </tr>
+            <tr>
+                <td>Неякісне оцінювання програмного проекту<input type="checkbox" class="real4" onchange="realChange()" checked /></td>
+            </tr>
+            <tr>
+                <td>Прогалини в документуванні етапів реалізації програмного проекту<input type="checkbox" class="real4" onchange="realChange()" checked /></td>
+            </tr>
+            <tr>
+                <td>промахи в прогнозуванні результатів реалізації програмного проекту<input type="checkbox" class="real4" onchange="realChange()" checked /></td>
+            </tr>
+        </table>
+        <h2 style="font-weight: 400; text-align: right" id="result1">100.00% Кількість - 18</h2>
+    </body>
+</html>
