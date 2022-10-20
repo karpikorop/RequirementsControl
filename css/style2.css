@@ -24,39 +24,60 @@ h2 {
     margin-inline: auto;
 }
 table {
+    overflow: scroll;
     margin-top: 1em;
     margin-bottom: 2em;
     font-weight: 300;
     border-collapse: collapse;
-    border: none;
     outline: 2px;
     outline-color: rgb(30, 30, 30);
     outline-style: solid;
-    width: min(100% - 2rem, 55rem);
+    width: min(100% - 2rem, 90rem);
     margin-inline: auto;
 }
-td,
-th {
+th,
+td {
+    width: 5px;
+    padding: 3px;
+    font-weight: 100;
     border: none;
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    padding: 8px;
+    border: 1px solid rgb(59, 59, 59);
+    border-collapse: collapse;
+    text-align: center;
 }
-
+th {
+    font-weight: 400;
+    text-align: center;
+    padding-block: 8px;
+}
 tr:nth-child(even) {
     background-color: rgb(30, 30, 30);
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 input {
     text-align: center;
     border: none;
-
-    border-bottom: 1px solid var(--text-color);
+    font-size: inherit;
+    font-family: inherit;
     color: var(--text-color);
-
     outline: none;
     background-color: inherit;
+}
+table input {
+    padding: 0;
+    margin: 0;
+    font-weight: inherit;
+    width: 100%;
 }
 .navbar {
     background-color: transparent;

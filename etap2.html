@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+        <script src="js/etap2.js"></script>
+        <title>RequirementsControl</title>
+    </head>
+    <body>
+        <header class="">
+            <nav class="navbar" id="navigation">
+                <div class="navbar-nav">
+                    <a class="navbar-brand" href="index.html">Етап 1</a>
+                    <a class="nav-item nav-link active" href="#">Етап 2</a>
+                    <a class="nav-item nav-link" href="#">Етап 3</a>
+                    <a class="nav-item nav-link" href="#">Етап 4</a>
+                </div>
+            </nav>
+        </header>
+        <h1 style="font-weight: 200; text-align: center" id="info">Етап 2. Аналіз ризиків розроблення ПЗ</h1>
+        <h2 style="font-weight: 100; text-align: center">2.1. Визначення ймовірності настання ризикових подій</h2>
+    </body>
+
+    <table>
+        <tr>
+            <th colspan="2"></th>
+            <th colspan="10">Оцінки експертів у діапазоні [0...1]</th>
+
+            <th colspan="10">Оцінки експертів з урахуванням їхньої вагомості</th>
+            <th>Sum</th>
+        </tr>
+        <tr>
+            <th style="width: 40%">1. Множина настання технічних ризикових подій</th>
+            <th style="width: 2rem"><input type="number" value="11" disabled class="tHead" /></th>
+
+            <th style="width: 2rem"><input type="number" value="10" placeholder="?" class="tHead" onchange="countAllTable('t')" /></th>
+            <th style="width: 2rem"><input type="number" value="9" placeholder="?" class="tHead" onchange="countAllTable('t')" /></th>
+            <th style="width: 2rem"><input type="number" value="7" placeholder="?" class="tHead" onchange="countAllTable('t')" /></th>
+            <th style="width: 2rem"><input type="number" value="9" placeholder="?" class="tHead" onchange="countAllTable('t')" /></th>
+            <th style="width: 2rem"><input type="number" value="5" placeholder="?" class="tHead" onchange="countAllTable('t')" /></th>
+            <th style="width: 2rem"><input type="number" value="8" placeholder="?" class="tHead" onchange="countAllTable('t')" /></th>
+            <th style="width: 2rem"><input type="number" value="8" placeholder="?" class="tHead" onchange="countAllTable('t')" /></th>
+            <th style="width: 2rem"><input type="number" value="7" placeholder="?" class="tHead" onchange="countAllTable('t')" /></th>
+            <th style="width: 2rem"><input type="number" value="5" placeholder="?" class="tHead" onchange="countAllTable('t')" /></th>
+            <th style="width: 2rem"><input type="number" value="6" placeholder="?" class="tHead" onchange="countAllTable('t')" /></th>
+
+            <th style="width: 2rem"><input type="number" value="0.00" disabled class="tHead" /></th>
+            <th style="width: 2rem"><input type="number" value="0.00" disabled class="tHead" /></th>
+            <th style="width: 2rem"><input type="number" value="0.00" disabled class="tHead" /></th>
+            <th style="width: 2rem"><input type="number" value="0.00" disabled class="tHead" /></th>
+            <th style="width: 2rem"><input type="number" value="0.00" disabled class="tHead" /></th>
+            <th style="width: 2rem"><input type="number" value="0.00" disabled class="tHead" /></th>
+            <th style="width: 2rem"><input type="number" value="0.00" disabled class="tHead" /></th>
+            <th style="width: 2rem"><input type="number" value="0.00" disabled class="tHead" /></th>
+            <th style="width: 2rem"><input type="number" value="0.00" disabled class="tHead" /></th>
+            <th style="width: 2rem"><input type="number" value="0.00" disabled class="tHead" /></th>
+            <th style="width: 3rem"><input type="number" value="0.00" disabled class="tHead" /></th>
+        </tr>
+        <tr>
+            <td>Затримки у постачанні обладнання, необхідного для підтримки процесу розроблення ПЗ</td>
+            <td><input type="checkbox" checked class="tr1" id="checkTR1" onchange="countSumRow('tr1', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e1" onchange="countSumRow('tr1', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e2" onchange="countSumRow('tr1', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e3" onchange="countSumRow('tr1', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e4" onchange="countSumRow('tr1', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e5" onchange="countSumRow('tr1', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e6" onchange="countSumRow('tr1', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e7" onchange="countSumRow('tr1', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e8" onchange="countSumRow('tr1', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e9" onchange="countSumRow('tr1', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e10" onchange="countSumRow('tr1', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e11" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e12" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e13" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e14" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e15" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e16" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e17" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e18" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e19" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr1" id="tr1e20" disabled /></td>
+
+            <td><input type="number" value="0.00" class="tr1" id="tr1sum" disabled /></td>
+        </tr>
+        <tr>
+            <td>Затримки у постачанні інструментальних засобів, необхідних для підтримки процесу розроблення ПЗ</td>
+            <td><input type="checkbox" checked class="tr2" id="checkTR2" onchange="countSumRow('tr2', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e1" onchange="countSumRow('tr2', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e2" onchange="countSumRow('tr2', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e3" onchange="countSumRow('tr2', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e4" onchange="countSumRow('tr2', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e5" onchange="countSumRow('tr2', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e6" onchange="countSumRow('tr2', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e7" onchange="countSumRow('tr2', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e8" onchange="countSumRow('tr2', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e9" onchange="countSumRow('tr2', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e10" onchange="countSumRow('tr2', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e11" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e12" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e13" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e14" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e15" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e16" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e17" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e18" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e19" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr2" id="tr2e20" disabled /></td>
+
+            <td><input type="number" value="0.00" class="tr2" id="tr2sum" disabled /></td>
+        </tr>
+        <tr>
+            <td>Небажання команди виконавців використовувати інструментальні засоби для підтримки процесу розроблення ПЗ</td>
+            <td><input type="checkbox" checked class="tr3" id="checkTR3" onchange="countSumRow('tr3', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e1" onchange="countSumRow('tr3', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e2" onchange="countSumRow('tr3', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e3" onchange="countSumRow('tr3', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e4" onchange="countSumRow('tr3', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e5" onchange="countSumRow('tr3', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e6" onchange="countSumRow('tr3', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e7" onchange="countSumRow('tr3', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e8" onchange="countSumRow('tr3', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e9" onchange="countSumRow('tr3', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e10" onchange="countSumRow('tr3', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e11" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e12" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e13" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e14" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e15" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e16" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e17" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e18" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e19" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr3" id="tr3e20" /></td>
+
+            <td><input type="number" value="0.00" class="tr3" id="tr3sum" disabled /></td>
+        </tr>
+        <tr>
+            <td>Формування запитів на більш потужні інструментальні засоби розроблення ПЗ</td>
+            <td><input type="checkbox" checked class="tr4" id="checkTR4" onchange="countSumRow('tr4', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e1" onchange="countSumRow('tr4', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e2" onchange="countSumRow('tr4', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e3" onchange="countSumRow('tr4', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e4" onchange="countSumRow('tr4', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e5" onchange="countSumRow('tr4', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e6" onchange="countSumRow('tr4', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e7" onchange="countSumRow('tr4', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e8" onchange="countSumRow('tr4', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e9" onchange="countSumRow('tr4', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e10" onchange="countSumRow('tr4', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e11" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e12" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e13" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e14" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e15" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e16" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e17" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e18" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e19" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr4" id="tr4e20" disabled /></td>
+
+            <td><input type="number" value="0.00" class="tr4" id="tr4sum" disabled /></td>
+        </tr>
+        <tr>
+            <td>Відмова команди виконавців від CASE-засобів розроблення ПЗ</td>
+            <td><input type="checkbox" checked class="tr5" id="checkTR5" onchange="countSumRow('tr5', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e1" onchange="countSumRow('tr5', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e2" onchange="countSumRow('tr5', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e3" onchange="countSumRow('tr5', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e4" onchange="countSumRow('tr5', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e5" onchange="countSumRow('tr5', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e6" onchange="countSumRow('tr5', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e7" onchange="countSumRow('tr5', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e8" onchange="countSumRow('tr5', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e9" onchange="countSumRow('tr5', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e10" onchange="countSumRow('tr5', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e11" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e12" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e13" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e14" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e15" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e16" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e17" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e18" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e19" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr5" id="tr5e20" disabled /></td>
+
+            <td><input type="number" value="0.00" class="tr5" id="tr5sum" disabled /></td>
+        </tr>
+        <tr>
+            <td>Неефективність програмного коду, згенерованого CASE-засобами розроблення ПЗ</td>
+            <td><input type="checkbox" checked class="tr6" id="checkTR6" onchange="countSumRow('tr6', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e1" onchange="countSumRow('tr6', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e2" onchange="countSumRow('tr6', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e3" onchange="countSumRow('tr6', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e4" onchange="countSumRow('tr6', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e5" onchange="countSumRow('tr6', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e6" onchange="countSumRow('tr6', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e7" onchange="countSumRow('tr6', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e8" onchange="countSumRow('tr6', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e9" onchange="countSumRow('tr6', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e10" onchange="countSumRow('tr6', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e11" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e12" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e13" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e14" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e15" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e16" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e17" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e18" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e19" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr6" id="tr6e20" disabled /></td>
+
+            <td><input type="number" value="0.00" class="tr6" id="tr6sum" disabled /></td>
+        </tr>
+        <tr>
+            <td>Неможливість інтеграції CASE-засобів з іншими інструментальними засобами для підтримки процесу розроблення ПЗ</td>
+            <td><input type="checkbox" checked class="tr7" id="checkTR7" onchange="countSumRow('tr7', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e1" onchange="countSumRow('tr7', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e2" onchange="countSumRow('tr7', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e3" onchange="countSumRow('tr7', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e4" onchange="countSumRow('tr7', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e5" onchange="countSumRow('tr7', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e6" onchange="countSumRow('tr7', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e7" onchange="countSumRow('tr7', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e8" onchange="countSumRow('tr7', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e9" onchange="countSumRow('tr7', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e10" onchange="countSumRow('tr7', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e11" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e12" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e13" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e14" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e15" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e16" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e17" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e18" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e19" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr7" id="tr7e20" disabled /></td>
+
+            <td><input type="number" value="0.00" class="tr7" id="tr7sum" disabled /></td>
+        </tr>
+        <tr>
+            <td>Недостатня продуктивність баз(и) даних для підтримки процесу розроблення ПЗ</td>
+            <td><input type="checkbox" checked class="tr8" id="checkTR8" onchange="countSumRow('tr8', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e1" onchange="countSumRow('tr8', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e2" onchange="countSumRow('tr8', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e3" onchange="countSumRow('tr8', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e4" onchange="countSumRow('tr8', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e5" onchange="countSumRow('tr8', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e6" onchange="countSumRow('tr8', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e7" onchange="countSumRow('tr8', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e8" onchange="countSumRow('tr8', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e9" onchange="countSumRow('tr8', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e10" onchange="countSumRow('tr8', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e11" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e12" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e13" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e14" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e15" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e16" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e17" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e18" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e19" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr8" id="tr8e20" disabled /></td>
+
+            <td><input type="number" value="0.00" class="tr8" id="tr8sum" disabled /></td>
+        </tr>
+        <tr>
+            <td>Програмні компоненти, які використовують повторно в ПЗ, мають дефекти та обмежені функціональні можливості</td>
+            <td><input type="checkbox" checked class="tr9" id="checkTR9" onchange="countSumRow('tr9', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e1" onchange="countSumRow('tr9', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e2" onchange="countSumRow('tr9', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e3" onchange="countSumRow('tr9', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e4" onchange="countSumRow('tr9', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e5" onchange="countSumRow('tr9', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e6" onchange="countSumRow('tr9', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e7" onchange="countSumRow('tr9', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e8" onchange="countSumRow('tr9', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e9" onchange="countSumRow('tr9', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e10" onchange="countSumRow('tr9', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e11" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e12" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e13" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e14" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e15" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e16" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e17" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e18" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e19" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr9" id="tr9e20" disabled /></td>
+
+            <td><input type="number" value="0.00" class="tr9" id="tr9sum" disabled /></td>
+        </tr>
+        <tr>
+            <td>Швидкість виявлення дефектів у програмному коді є нижчою від раніше запланованих термінів</td>
+            <td><input type="checkbox" checked class="tr10" id="checkTR10" onchange="countSumRow('tr10', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e1" onchange="countSumRow('tr10', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e2" onchange="countSumRow('tr10', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e3" onchange="countSumRow('tr10', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e4" onchange="countSumRow('tr10', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e5" onchange="countSumRow('tr10', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e6" onchange="countSumRow('tr10', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e7" onchange="countSumRow('tr10', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e8" onchange="countSumRow('tr10', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e9" onchange="countSumRow('tr10', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e10" onchange="countSumRow('tr10', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e11" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e12" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e13" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e14" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e15" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e16" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e17" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e18" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e19" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr10" id="tr10e20" disabled /></td>
+
+            <td><input type="number" value="0.00" class="tr10" id="tr10sum" disabled /></td>
+        </tr>
+        <tr>
+            <td>Поява дефектних системних компонент, які використовують для розроблення ПЗ</td>
+            <td><input type="checkbox" checked class="tr11" id="checkTR11" onchange="countSumRow('tr11', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e1" onchange="countSumRow('tr11', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e2" onchange="countSumRow('tr11', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e3" onchange="countSumRow('tr11', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e4" onchange="countSumRow('tr11', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e5" onchange="countSumRow('tr11', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e6" onchange="countSumRow('tr11', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e7" onchange="countSumRow('tr11', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e8" onchange="countSumRow('tr11', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e9" onchange="countSumRow('tr11', this.id)" /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e10" onchange="countSumRow('tr11', this.id)" /></td>
+
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e11" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e12" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e13" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e14" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e15" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e16" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e17" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e18" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e19" disabled /></td>
+            <td><input type="number" value="0.00" placeholder="?" class="tr11" id="tr11e20" disabled /></td>
+
+            <td><input type="number" value="0.00" class="tr11" id="tr11sum" disabled /></td>
+        </tr>
+    </table>
+</html>
