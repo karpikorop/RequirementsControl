@@ -10,12 +10,15 @@ function scrollFunction() {
     }
 }
 // count points and sum for certain row
-function countSumRow(className, id) {
+function countSumRow(className) {
     //0-checkbox, (1-10)-experts, (11-20)-points, 21-Sum
     let column = document.getElementsByClassName(className);
-    let tableType = column[1].id.charAt(0);
-    //0-count, (1-10)-priority, (11-20)-prirotyPoints
+
+    let tableType = className.charAt(0);
+    //0-count, (1-10)-priority, (11-20)-prirotyPoints, 21-sum
     let header = document.getElementsByClassName(tableType + "Head");
+
+    
 
     //check checkBOX
     if (column[0].checked == false) {
@@ -27,23 +30,26 @@ function countSumRow(className, id) {
     }
 
     let sum = 0;
+    let prioritySum = 0;
     //count points
     for (let i = 1; i <= 10; i++) {
         column[i + 10].value = (column[i].value * header[i].value).toFixed(2);
         sum = sum + column[i].value * header[i].value;
+        prioritySum += header[i].value * 1;
     }
     //document.getElementById("info").innerText = sum;
-    column[21].value = sum.toFixed(2);
+    column[21].value = (sum / prioritySum).toFixed(2);
 
     countSumTable(tableType);
 }
 //counts sums in header
 function countSumTable(tableType) {
-    //0-count, (1-10)-priority, (11-20)-prirotyPoints
+    //0-count, (1-10)-priority, (11-20)-prirotyPoints, 21-sum
     let header = document.getElementsByClassName(tableType + "Head");
 
     let rowCount = getRowCount(tableType);
 
+   
     //checks count
     let tempCount = 0;
     for (let i = 1; i <= rowCount; i++) {
@@ -56,8 +62,25 @@ function countSumTable(tableType) {
         for (let j = 1; j <= rowCount; j++) {
             tempSum += document.getElementsByClassName(tableType + "r" + j)[i].value * 1;
         }
-        header[i].value = tempSum.toFixed(2);
+        if(i < 21)
+            header[i].value = (tempSum / header[i-10].value).toFixed(2);
+        else 
+            header[i].value = tempSum.toFixed(2);
     }
+    countSum();
+}
+function countSum(){
+    //0-count, (1-10)-priority, (11-20)-prirotyPoints, 21-sum
+    let tHeader = document.getElementsByClassName("tHead");
+    let cHeader = document.getElementsByClassName("cHead");
+    let pHeader = document.getElementsByClassName("pHead");
+    let rHeader = document.getElementsByClassName("rHead");
+
+    let sum = (((tHeader[21].value * 1) + (cHeader[21].value * 1) + (pHeader[21].value * 1) + (rHeader[21].value * 1))/4).toFixed(2);
+    
+        
+    document.getElementById("result1").innerText = "Сума зі всіх таблиць - " + sum;
+
 }
 //counts table after priority of expert changes
 function countAllTable(tableType) {
@@ -66,7 +89,7 @@ function countAllTable(tableType) {
     let rowCount = getRowCount(tableType);
 
     for (let j = 1; j <= rowCount; j++) {
-        countSumRow(tableType + "r" + j, "countAllTables");
+        countSumRow(tableType + "r" + j);
     }
 }
 
