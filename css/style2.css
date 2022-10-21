@@ -32,11 +32,12 @@ table {
     outline: 2px;
     outline-color: rgb(30, 30, 30);
     outline-style: solid;
-    width: min(100% - 2rem, 90rem);
+    width: min(100% - 2rem, 110rem);
     margin-inline: auto;
 }
 th,
 td {
+    height: 2em;
     width: 5px;
     padding: 3px;
     font-weight: 100;
