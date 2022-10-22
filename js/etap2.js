@@ -9,6 +9,8 @@ function scrollFunction() {
         document.getElementById("navigation").classList.remove("onscroll");
     }
 }
+
+let manageCounts = 0;
 // count points and sum for certain row
 function countSumRow(className) {
     //0-checkbox, (1-10)-experts, (11-20)-points, 21-Sum, 22-Start, 23-Add, 24-End
@@ -68,6 +70,7 @@ function countSumTable(tableType) {
             tempSum += document.getElementsByClassName(tableType + "r" + j)[i].value * 1;
         }
         if (i < 21) header[i].value = (tempSum / header[i - 10].value).toFixed(2);
+        else if (i == 21) header[i].value = (tempSum / header[0].value).toFixed(2);
         else header[i].value = tempSum.toFixed(2);
     }
     countSumFromAllTables();
@@ -133,4 +136,81 @@ function getRowCount(tableType) {
     if (tableType == "p") return 9;
     if (tableType == "r") return 14;
     return 0;
+}
+
+function changeManagment(className) {
+    let testCount = 0;
+    let column = document.getElementsByClassName(className);
+    for (let i = 0; i < column.length; i++) {
+        testCount += column[i].value * 1;
+    }
+    if (testCount != 1) {
+        for (let i = 0; i < column.length; i++) {
+            column[i].value = 0;
+        }
+        alert("Значення можуть бути лише або 1, або 0.\nДля кожного заходу може бути вибраний лише один напрямок.");
+        return;
+    }
+    countManageCounts();
+}
+function countManageCounts() {
+    let count = 0;
+    for (let i = 1; i <= 19; i++) {
+        let column = document.getElementsByClassName("er" + i);
+        for (let i = 0; i < column.length; i++) {
+            count += column[i].value * 1;
+        }
+    }
+    manageCounts = count;
+}
+function countEtap4Table() {
+    /*let header = document.getElementsByClassName(tableType + "Head");
+
+    let rowCount = getRowCount(tableType);
+
+    //checks count
+    let tempCount = 0;
+    for (let i = 1; i <= rowCount; i++) {
+        if (document.getElementsByClassName(tableType + "r" + i)[0].checked == true) tempCount++;
+    }
+    header[0].value = tempCount;*/
+
+    let tableTypes = ["t", "c", "p", "r"];
+
+    for (let type = 0; type < tableTypes.length; type++) {
+        //0-count, (1-10)-priority, (11-20)-prirotyPoints, 21-sum, 22-Start, 23-Add, 24-End
+        let header = document.getElementsByClassName(tableTypes[type] + "Head");
+        let header4 = document.getElementsByClassName("f" + tableTypes[type] + "Head");
+
+        let rowCount = getRowCount(tableTypes[type]);
+
+        let tempSum = 0;
+        let array = [];
+        for (let j = 1; j <= rowCount; j++) {
+            array.push((document.getElementsByClassName(tableTypes[type] + "r" + j)[23].value * Math.pow(0.97, manageCounts)).toFixed(2));
+            document.getElementsByClassName("f" + tableTypes[type] + "r" + j)[0].value = array[j - 1];
+        }
+        header4[0].value = (header[23].value * Math.pow(0.97, manageCounts)).toFixed(2);
+
+        let max = Math.max(...array);
+        let min = Math.min(...array);
+        let mpr = ((max - min) / 3).toFixed(2);
+        let mpr1 = min * 1 + mpr * 1;
+        let mpr2 = mpr * 2;
+        let mpr3 = mpr * 3;
+
+        //document.getElementById("info").innerText = max + " " + min + " " + mpr + " " + mpr1 + " " + mpr2 + " " + mpr3;
+
+        let str = "Низький";
+        for (let j = 0; j < rowCount; j++) {
+            if (array[j] < mpr1) {
+                str = "Низький";
+            } else if (array[j] < mpr2) {
+                str = "Середній";
+            } else if (array[j] < mpr3) {
+                str = "Високий";
+            }
+            document.getElementsByClassName("f" + tableTypes[type] + "r" + (j + 1))[1].innerText = str;
+        }
+    }
 }

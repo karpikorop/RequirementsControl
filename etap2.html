@@ -19,40 +19,7 @@
                 </div>
             </nav>
         </header>
-        <h1 style="font-weight: 200; text-align: center" id="info">Етап 2. Аналіз ризиків розроблення ПЗ</h1>
-        <h2 style="font-weight: 100; text-align: center">Розподіл вартості реалізації проекту за множинами ризиків</h2>
-
-        <div style="width: min(100% - 2rem, 110rem); margin-inline: auto">
-            <table style="width: min(100% - 2rem, 35em); margin: 2em auto 3em auto">
-                <tr>
-                    <th style="width: 10em">Тип</th>
-                    <th style="width: 3em">Сума</th>
-                    <th style="width: 2em">1</th>
-                    <th style="width: 2em">2</th>
-                    <th style="width: 2em">3</th>
-                    <th style="width: 2em">4</th>
-                    <th style="width: 4em">Одиниці</th>
-                </tr>
-                <tr>
-                    <th>Початкова вартість</th>
-                    <td><input type="number" value="0" class="startCost" disabled /></td>
-                    <td><input type="number" value="0" class="startCost" disabled /></td>
-                    <td><input type="number" value="0" class="startCost" disabled /></td>
-                    <td><input type="number" value="0" class="startCost" disabled /></td>
-                    <td><input type="number" value="0" class="startCost" disabled /></td>
-                    <th>тис. грн.</th>
-                </tr>
-                <tr>
-                    <th>Кінцева вартість</th>
-                    <td><input type="number" value="0" class="endCost" disabled /></td>
-                    <td><input type="number" value="0" class="endCost" disabled /></td>
-                    <td><input type="number" value="0" class="endCost" disabled /></td>
-                    <td><input type="number" value="0" class="endCost" disabled /></td>
-                    <td><input type="number" value="0" class="endCost" disabled /></td>
-                    <th>тис. грн.</th>
-                </tr>
-            </table>
-        </div>
+        <h1 style="font-weight: 200; text-align: center; margin-bottom: 1em" id="info">Етап 2. Аналіз ризиків розроблення ПЗ</h1>
 
         <h2 style="font-weight: 100; text-align: center">2.1. Визначення ймовірності настання ризикових подій</h2>
         <table>
@@ -1462,6 +1429,405 @@
                 <td><input type="number" value="0" class="rr14" disabled /></td>
             </tr>
         </table>
-        <h2 style="font-weight: 400; text-align: right; margin-bottom: 5em; width: min(100% - 2rem, 105rem)" id="result1">Сума зі всіх таблиць - 0</h2>
+        <h2 style="font-weight: 400; text-align: right; margin-bottom: 2em; width: min(100% - 2rem, 110rem)" id="result1">Ймовірність виникнення ризикової події</h2>
+
+        <h2 style="font-weight: 100; text-align: right; width: min(100% - 2rem, 110rem); margin-bottom: 1em">Розподіл вартості реалізації проекту за множинами ризиків</h2>
+        <div style="width: min(100% - 2rem, 110rem); display: flex; justify-content: right; margin: 0 auto 5em auto">
+            <table style="width: min(100% - 2rem, 35em); margin: 0">
+                <tr>
+                    <th style="width: 10em">Тип</th>
+                    <th style="width: 3em">Сума</th>
+                    <th style="width: 2em">1</th>
+                    <th style="width: 2em">2</th>
+                    <th style="width: 2em">3</th>
+                    <th style="width: 2em">4</th>
+                    <th style="width: 4em">Одиниці</th>
+                </tr>
+                <tr>
+                    <th>Початкова вартість</th>
+                    <td><input type="number" value="0" class="startCost" disabled /></td>
+                    <td><input type="number" value="0" class="startCost" disabled /></td>
+                    <td><input type="number" value="0" class="startCost" disabled /></td>
+                    <td><input type="number" value="0" class="startCost" disabled /></td>
+                    <td><input type="number" value="0" class="startCost" disabled /></td>
+                    <th>тис. грн.</th>
+                </tr>
+                <tr>
+                    <th>Кінцева вартість</th>
+                    <td><input type="number" value="0" class="endCost" disabled /></td>
+                    <td><input type="number" value="0" class="endCost" disabled /></td>
+                    <td><input type="number" value="0" class="endCost" disabled /></td>
+                    <td><input type="number" value="0" class="endCost" disabled /></td>
+                    <td><input type="number" value="0" class="endCost" disabled /></td>
+                    <th>тис. грн.</th>
+                </tr>
+            </table>
+        </div>
+
+        <h1 style="font-weight: 200; text-align: center; margin-bottom: 1em">Етап 3. Планування ризиків розроблення ПЗ</h1>
+        <h2 style="font-weight: 100; text-align: center">2.1. Визначення ймовірності настання ризикових подій</h2>
+
+        <table style="width: min(100% - 2rem, 60em); margin: 2em auto 3em auto">
+            <tr>
+                <th style="width: 55%">Назва заходу</th>
+                <th style="width: 15%">Помякшення</th>
+                <th style="width: 15%">Прийняття</th>
+                <th style="width: 15%">Ухилення</th>
+            </tr>
+            <tr>
+                <td>1. Попереднє навчання членів проектного колективу</td>
+                <td><input type="number" value="0" placeholder="?" class="er1" onchange="changeManagment('er1')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er1" onchange="changeManagment('er1')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er1" onchange="changeManagment('er1')" /></td>
+            </tr>
+            <tr>
+                <td>2. Узгодження детального переліку вимог до ПЗ із замовником</td>
+                <td><input type="number" value="0" placeholder="?" class="er2" onchange="changeManagment('er2')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er2" onchange="changeManagment('er2')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er2" onchange="changeManagment('er2')" /></td>
+            </tr>
+            <tr>
+                <td>3. Внесення узгодженого переліку вимог до ПЗ замовника в договір</td>
+                <td><input type="number" value="0" placeholder="?" class="er3" onchange="changeManagment('er3')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er3" onchange="changeManagment('er3')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er3" onchange="changeManagment('er3')" /></td>
+            </tr>
+            <tr>
+                <td>4. Точне слідування вимогам замовника з узгодженого переліку вимог до ПЗ</td>
+                <td><input type="number" value="0" placeholder="?" class="er4" onchange="changeManagment('er4')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er4" onchange="changeManagment('er4')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er4" onchange="changeManagment('er4')" /></td>
+            </tr>
+            <tr>
+                <td>5. Попередні дослідження ринку</td>
+                <td><input type="number" value="0" placeholder="?" class="er5" onchange="changeManagment('er5')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er5" onchange="changeManagment('er5')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er5" onchange="changeManagment('er5')" /></td>
+            </tr>
+            <tr>
+                <td>6. Експертна оцінка програмного проекту досвідченим стороннім консультантом</td>
+                <td><input type="number" value="0" placeholder="?" class="er6" onchange="changeManagment('er6')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er6" onchange="changeManagment('er6')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er6" onchange="changeManagment('er6')" /></td>
+            </tr>
+            <tr>
+                <td>7. Консультації досвідченого стороннього консультанта</td>
+                <td><input type="number" value="0" placeholder="?" class="er7" onchange="changeManagment('er7')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er7" onchange="changeManagment('er7')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er7" onchange="changeManagment('er7')" /></td>
+            </tr>
+            <tr>
+                <td>8. Тренінг з вивчення необхідних інструментів розроблення ПЗ</td>
+                <td><input type="number" value="0" placeholder="?" class="er8" onchange="changeManagment('er8')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er8" onchange="changeManagment('er8')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er8" onchange="changeManagment('er8')" /></td>
+            </tr>
+            <tr>
+                <td>9. Укладання договору страхування</td>
+                <td><input type="number" value="0" placeholder="?" class="er9" onchange="changeManagment('er9')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er9" onchange="changeManagment('er9')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er9" onchange="changeManagment('er9')" /></td>
+            </tr>
+            <tr>
+                <td>10. Використання "шаблонних" рішень з вдалих попередніх проектів при управлінні програмним проектом</td>
+                <td><input type="number" value="0" placeholder="?" class="er10" onchange="changeManagment('er10')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er10" onchange="changeManagment('er10')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er10" onchange="changeManagment('er10')" /></td>
+            </tr>
+            <tr>
+                <td>11. Підготовка документів, які показують важливість даного проекту для досягнення фінансових цілей компанії-розробника</td>
+                <td><input type="number" value="0" placeholder="?" class="er11" onchange="changeManagment('er11')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er11" onchange="changeManagment('er11')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er11" onchange="changeManagment('er11')" /></td>
+            </tr>
+            <tr>
+                <td>12. Реорганізація роботи проектного колективу так, щоб обов'язки та робота членів колективу перекривали один одного</td>
+                <td><input type="number" value="0" placeholder="?" class="er12" onchange="changeManagment('er12')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er12" onchange="changeManagment('er12')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er12" onchange="changeManagment('er12')" /></td>
+            </tr>
+            <tr>
+                <td>13. Придбання (замовлення) частини компонент розроблюваного ПЗ</td>
+                <td><input type="number" value="0" placeholder="?" class="er13" onchange="changeManagment('er13')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er13" onchange="changeManagment('er13')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er13" onchange="changeManagment('er13')" /></td>
+            </tr>
+            <tr>
+                <td>14. Заміна потенційно дефектних компонент розроблюваного ПЗ придбаними компонентами, які гарантують якість виконання роботи</td>
+                <td><input type="number" value="0" placeholder="?" class="er14" onchange="changeManagment('er14')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er14" onchange="changeManagment('er14')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er14" onchange="changeManagment('er14')" /></td>
+            </tr>
+            <tr>
+                <td>15. Придбання більш продуктивної бази даних</td>
+                <td><input type="number" value="0" placeholder="?" class="er15" onchange="changeManagment('er15')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er15" onchange="changeManagment('er15')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er15" onchange="changeManagment('er15')" /></td>
+            </tr>
+            <tr>
+                <td>16. Використання генератора програмного коду</td>
+                <td><input type="number" value="0" placeholder="?" class="er16" onchange="changeManagment('er16')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er16" onchange="changeManagment('er16')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er16" onchange="changeManagment('er16')" /></td>
+            </tr>
+            <tr>
+                <td>17. Реорганізація роботи проектного колективу залежно від рівня труднощів виконання завдань та професійних рівнів розробників</td>
+                <td><input type="number" value="0" placeholder="?" class="er17" onchange="changeManagment('er17')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er17" onchange="changeManagment('er17')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er17" onchange="changeManagment('er17')" /></td>
+            </tr>
+            <tr>
+                <td>18. Повторне використання придатних компонент ПЗ, які були розроблені для інших програмних проектів</td>
+                <td><input type="number" value="0" placeholder="?" class="er18" onchange="changeManagment('er18')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er18" onchange="changeManagment('er18')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er18" onchange="changeManagment('er18')" /></td>
+            </tr>
+            <tr>
+                <td>19. Аналіз доцільності розроблення даного ПЗ</td>
+                <td><input type="number" value="0" placeholder="?" class="er19" onchange="changeManagment('er19')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er19" onchange="changeManagment('er19')" /></td>
+                <td><input type="number" value="0" placeholder="?" class="er19" onchange="changeManagment('er19')" /></td>
+            </tr>
+        </table>
+
+        <h1 style="font-weight: 200; text-align: center; margin-top: 3em">Етап 4. Моніторинг ризиків розроблення</h1>
+        <div style="width: min(100% - 2rem, 65em); margin: 2em auto 0em auto; display: flex; justify-content: right">
+            <h2 style="font-weight: 100; text-align: center">4.1. Оцінювання ризиків.</h2>
+            <button type="button" onclick="countEtap4Table()">Обрахувати ціну після заходів для зменшення ризиків</button>
+        </div>
+
+        <table style="width: min(100% - 2rem, 65em); margin: 1em auto 3em auto">
+            <tr>
+                <th style="width: 55%">1. Множина настання технічних ризикових подій</th>
+                <th style="width: 15%"><input type="number" value="0" class="ftHead" disabled /></th>
+                <th style="width: 15%">Пріоритет ризику</th>
+            </tr>
+            <tr>
+                <td>1.1. Затримки у постачанні обладнання, необхідного для підтримки процесу розроблення ПЗ</td>
+                <td><input type="number" value="0" class="ftr1" disabled /></td>
+                <td class="ftr1">Низький</td>
+            </tr>
+            <tr>
+                <td>1.2. Затримки у постачанні інструментальних засобів, необхідних для підтримки процесу розроблення ПЗ</td>
+                <td><input type="number" value="0" class="ftr2" disabled /></td>
+                <td class="ftr2">Низький</td>
+            </tr>
+            <tr>
+                <td>1.3. Небажання команди виконавців використовувати інструментальні засоби для підтримки процесу розроблення ПЗ</td>
+                <td><input type="number" value="0" class="ftr3" disabled /></td>
+                <td class="ftr3">Низький</td>
+            </tr>
+            <tr>
+                <td>1.4. Формування запитів на більш потужні інструментальні засоби розроблення ПЗ</td>
+                <td><input type="number" value="0" class="ftr4" disabled /></td>
+                <td class="ftr4">Низький</td>
+            </tr>
+            <tr>
+                <td>1.5. Відмова команди виконавців від CASE-засобів розроблення ПЗ</td>
+                <td><input type="number" value="0" class="ftr5" disabled /></td>
+                <td class="ftr5">Низький</td>
+            </tr>
+            <tr>
+                <td>1.6. Неефективність програмного коду, згенерованого CASE-засобами розроблення ПЗ</td>
+                <td><input type="number" value="0" class="ftr6" disabled /></td>
+                <td class="ftr6">Низький</td>
+            </tr>
+            <tr>
+                <td>1.7. Неможливість інтеграції CASE-засобів з іншими інструментальними засобами для підтримки процесу розроблення ПЗ</td>
+                <td><input type="number" value="0" class="ftr7" disabled /></td>
+                <td class="ftr7">Низький</td>
+            </tr>
+            <tr>
+                <td>1.8. Недостатня продуктивність баз(и) даних для підтримки процесу розроблення ПЗ</td>
+                <td><input type="number" value="0" class="ftr8" disabled /></td>
+                <td class="ftr8">Низький</td>
+            </tr>
+            <tr>
+                <td>1.9. Програмні компоненти, які використовують повторно в ПЗ, мають дефекти та обмежені функціональні можливості</td>
+                <td><input type="number" value="0" class="ftr9" disabled /></td>
+                <td class="ftr9">Низький</td>
+            </tr>
+            <tr>
+                <td>1.10. Швидкість виявлення дефектів у програмному коді є нижчою від раніше запланованих термінів</td>
+                <td><input type="number" value="0" class="ftr10" disabled /></td>
+                <td class="ftr10">Низький</td>
+            </tr>
+            <tr>
+                <td>1.11. Поява дефектних системних компонент, які використовують для розроблення ПЗ</td>
+                <td><input type="number" value="0" class="ftr11" disabled /></td>
+                <td class="ftr11">Низький</td>
+            </tr>
+
+            <tr>
+                <th>2.Множина настання вартісних ризикових подій</th>
+                <th><input type="number" value="0" class="fcHead" disabled /></th>
+                <th>Пріоритет ризику</th>
+            </tr>
+
+            <tr>
+                <td>2.1. Недо(пере)оцінювання витрат на реалізацію програмного проекту (надмірно низька вартість)</td>
+                <td><input type="number" value="0" class="fcr1" disabled /></td>
+                <td class="fcr1">Низький</td>
+            </tr>
+            <tr>
+                <td>2.2. Фінансові ускладнення у компанії-замовника ПЗ</td>
+                <td><input type="number" value="0" class="fcr2" disabled /></td>
+                <td class="fcr2">Низький</td>
+            </tr>
+            <tr>
+                <td>2.3. фінансові ускладнення у компанії-розробника ПЗ</td>
+                <td><input type="number" value="0" class="fcr3" disabled /></td>
+                <td class="fcr3">Низький</td>
+            </tr>
+            <tr>
+                <td>2.4. Змен(збіль)шення бюджету програмного проекта з ініціативи компанії-замовника ПЗ під час його реалізації</td>
+                <td><input type="number" value="0" class="fcr4" disabled /></td>
+                <td class="fcr4">Низький</td>
+            </tr>
+            <tr>
+                <td>2.5. Висока вартість виконання повторних робіт, необхідних для зміни вимог до ПЗ</td>
+                <td><input type="number" value="0" class="fcr5" disabled /></td>
+                <td class="fcr5">Низький</td>
+            </tr>
+            <tr>
+                <td>2.6. Реорганізація структурних підрозділів у компанії-замовника ПЗ</td>
+                <td><input type="number" value="0" class="fcr6" disabled /></td>
+                <td class="fcr6">Низький</td>
+            </tr>
+            <tr>
+                <td>2.7. Реорганізація команди виконавців у компанії-розробника ПЗ</td>
+                <td><input type="number" value="0" class="fcr7" disabled /></td>
+                <td class="fcr7">Низький</td>
+            </tr>
+
+            <tr>
+                <th>3. Множина настання планових ризикових подій</th>
+                <th><input type="number" value="0" class="fpHead" disabled /></th>
+                <th>Пріоритет ризику</th>
+            </tr>
+
+            <tr>
+                <td>3.1. зміни графіка виконання робіт з боку замовника чи розробника ПЗ</td>
+                <td><input type="number" value="0" class="fpr1" disabled /></td>
+                <td class="fpr1">Низький</td>
+            </tr>
+            <tr>
+                <td>3.2. порушення графіка виконання робіт з боку компанії-розробника ПЗ;</td>
+                <td><input type="number" value="0" class="fpr2" disabled /></td>
+                <td class="fpr2">Низький</td>
+            </tr>
+            <tr>
+                <td>3.3. потреба зміни користувацьких вимог до ПЗ з боку компанії-замовника ПЗ</td>
+                <td><input type="number" value="0" class="fpr3" disabled /></td>
+                <td class="fpr3">Низький</td>
+            </tr>
+            <tr>
+                <td>3.4. потреба зміни функціональних вимог до ПЗ з боку компанії-розробника ПЗ</td>
+                <td><input type="number" value="0" class="fpr4" disabled /></td>
+                <td class="fpr4">Низький</td>
+            </tr>
+            <tr>
+                <td>3.5. потреба виконання великої кількості повторних робіт, необхідних для зміни вимог до ПЗ</td>
+                <td><input type="number" value="0" class="fpr5" disabled /></td>
+                <td class="fpr5">Низький</td>
+            </tr>
+            <tr>
+                <td>3.6. недо(пере)оцінювання тривалості етапів реалізації програмного проекту з боку компанії-замовника ПЗ</td>
+                <td><input type="number" value="0" class="fpr6" disabled /></td>
+                <td class="fpr6">Низький</td>
+            </tr>
+            <tr>
+                <td>3.7. остаточний розмір ПЗ значно перевищує (менший від) заплановані(их) його характеристики</td>
+                <td><input type="number" value="0" class="fpr7" disabled /></td>
+                <td class="fpr7">Низький</td>
+            </tr>
+            <tr>
+                <td>3.8. поява на ринку аналогічного ПЗ до виходу замовленого</td>
+                <td><input type="number" value="0" class="fpr8" disabled /></td>
+                <td class="fpr8">Низький</td>
+            </tr>
+            <tr>
+                <td>3.9. поява на ринку більш конкурентоздатного ПЗ</td>
+                <td><input type="number" value="0" class="fpr9" disabled /></td>
+                <td class="fpr9">Низький</td>
+            </tr>
+
+            <tr>
+                <th>4. Множина настання ризикових подій реалізації процесу управління програмним проектом</th>
+                <th><input type="number" value="0" class="frHead" disabled /></th>
+                <th>Пріоритет ризику</th>
+            </tr>
+
+            <tr>
+                <td>4.1. низький моральний стан персоналу команди виконавців ПЗ</td>
+                <td><input type="number" value="0" class="frr1" disabled /></td>
+                <td class="frr1">Низький</td>
+            </tr>
+            <tr>
+                <td>4.2. низька взаємодія між членами команди виконавців ПЗ</td>
+                <td><input type="number" value="0" class="frr2" disabled /></td>
+                <td class="frr2">Низький</td>
+            </tr>
+            <tr>
+                <td>4.3. пасивність керівника (менеджера) програмного проекту</td>
+                <td><input type="number" value="0" class="frr3" disabled /></td>
+                <td class="frr3">Низький</td>
+            </tr>
+            <tr>
+                <td>4.4. недостатня компетентність керівника (менеджера) програмного проекту</td>
+                <td><input type="number" value="0" class="frr4" disabled /></td>
+                <td class="frr4">Низький</td>
+            </tr>
+            <tr>
+                <td>4.5. незадоволеність замовника результатами етапів реалізації програмного проекту</td>
+                <td><input type="number" value="0" class="frr5" disabled /></td>
+                <td class="frr5">Низький</td>
+            </tr>
+            <tr>
+                <td>4.6. недостатня кількість фахівців у команді виконавців ПЗ з необхідним професійним рівнем</td>
+                <td><input type="number" value="0" class="frr6" disabled /></td>
+                <td class="frr6">Низький</td>
+            </tr>
+            <tr>
+                <td>4.7. хвороба провідного виконавця в найкритичніший момент розроблення ПЗ</td>
+                <td><input type="number" value="0" class="frr7" disabled /></td>
+                <td class="frr7">Низький</td>
+            </tr>
+            <tr>
+                <td>4.8. одночасна хвороба декількох виконавців підчас розроблення ПЗ</td>
+                <td><input type="number" value="0" class="frr8" disabled /></td>
+                <td class="frr8">Низький</td>
+            </tr>
+            <tr>
+                <td>4.9. неможливість організації необхідного навчання персоналу команди виконавців ПЗ</td>
+                <td><input type="number" value="0" class="frr9" disabled /></td>
+                <td class="frr9">Низький</td>
+            </tr>
+            <tr>
+                <td>4.10. зміна пріоритетів у процесі управління програмним проектом</td>
+                <td><input type="number" value="0" class="frr10" disabled /></td>
+                <td class="frr10">Низький</td>
+            </tr>
+            <tr>
+                <td>4.11. недо(пере)оцінювання необхідної кількості розробників (підрядників і субпідрядників) на етапах життєвого циклу розроблення ПЗ</td>
+                <td><input type="number" value="0" class="frr11" disabled /></td>
+                <td class="frr11">Низький</td>
+            </tr>
+            <tr>
+                <td>4.12. недостатнє (надмірне) документування результатів на етапах реалізації програмного проекту</td>
+                <td><input type="number" value="0" class="frr12" disabled /></td>
+                <td class="frr12">Низький</td>
+            </tr>
+            <tr>
+                <td>4.13. нереалістичне прогнозування результатів на етапах реалізації програмного проекту</td>
+                <td><input type="number" value="0" class="frr13" disabled /></td>
+                <td class="frr13">Низький</td>
+            </tr>
+            <tr>
+                <td>4.14. недостатній професійний рівень представників від компанії-замовника ПЗ</td>
+                <td><input type="number" value="0" class="frr14" disabled /></td>
+                <td class="frr14">Низький</td>
+            </tr>
+        </table>
     </body>
 </html>

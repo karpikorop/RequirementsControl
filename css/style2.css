@@ -109,3 +109,18 @@ header {
     box-shadow: 0px 1px 20px rgb(5, 5, 5);
     background-color: var(--bg-color2);
 }
+button {
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    height: 3em;
+    background-color: var(--bg-color2);
+    color: var(--text-color);
+    border: none;
+    box-shadow: 0px 0px 5px rgb(15, 15, 15);
+    transition: 0.1s;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(40, 40, 40);
+}
