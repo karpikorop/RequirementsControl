@@ -2,6 +2,8 @@ window.onscroll = function () {
     scrollFunction();
 };
 
+
+
 function scrollFunction() {
     if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
         document.getElementById("navigation").classList.add("onscroll");

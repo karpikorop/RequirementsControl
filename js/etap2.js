@@ -10,6 +10,50 @@ function scrollFunction() {
     }
 }
 
+
+
+function rand(){
+
+    for(let i = 1; i <= getRowCount("t"); i++){
+        let column = document.getElementsByClassName("t" + "r" + i);
+        for(let j = 1; j <= 10; j++){
+            let rand = Math.random().toFixed(2);
+            if(rand == 0)
+                rand += 0.05;
+            column[j].value = rand;
+        }
+    }
+    for(let i = 1; i <= getRowCount("c"); i++){
+        let column = document.getElementsByClassName("c" + "r" + i);
+        for(let j = 1; j <= 10; j++){
+            let rand = Math.random().toFixed(2);
+            if(rand == 0)
+                rand += 0.05;
+            column[j].value = rand;
+        }
+    }
+    for(let i = 1; i <= getRowCount("r"); i++){
+        let column = document.getElementsByClassName("r" + "r" + i);
+        for(let j = 1; j <= 10; j++){
+            let rand = Math.random().toFixed(2);
+            if(rand == 0)
+                rand += 0.05;
+            column[j].value = rand;
+        }
+    }
+    for(let i = 1; i <= getRowCount("p"); i++){
+        let column = document.getElementsByClassName("p" + "r" + i);
+        for(let j = 1; j <= 10; j++){
+            let rand = Math.random().toFixed(2);
+            if(rand == 0)
+                rand += 0.05;
+            column[j].value = rand;
+        }
+    }
+
+    
+}
+
 let manageCounts = 0;
 // count points and sum for certain row
 function countSumRow(className) {
